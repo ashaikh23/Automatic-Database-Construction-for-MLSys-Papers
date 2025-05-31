@@ -1,48 +1,45 @@
-# MLSys
+# Automatic Database Construction for MLSys Papers
 
-Next Steps:
+This repository contains our research from MLSys 2025 on building a machine learning-powered pipeline to automatically construct and analyze a curated database of academic papers in the Machine Learning Systems (MLSys) domain.
 
-Work on Supervised Learning Approach:
-How to collect samples
-What kind of classifier to use
-Hint:
+## 📄 Project Summary
 
-**Data Preparation:** (Should be able to use Specter2 to setup)
-   - Load the dataset containing paper titles, abstracts, and labels indicating whether each paper belongs to the MLSys category or not.
-   - Preprocess the text data by tokenizing, removing stopwords, and converting words to numerical representations (e.g., word embeddings).
+Our work focuses on:
+- Automatically ingesting and classifying academic papers relevant to MLSys.
+- Using machine learning techniques (clustering, KNN) and embeddings (SPECTER2, Sent2Vec) for document classification.
+- Performing citation and trend analysis to identify emerging topics and influential authors/institutions.
 
-2. **Positive and Negative Sample Selection:** (All the papers we have are positive samples and the rest are negative)
-   - Identify MLSys papers as positive samples and select an equal number of non-MLSys papers as negative samples.
-   - Ensure that the negative samples are carefully chosen to avoid using unrelated art papers or papers from irrelevant domains, as they may introduce bias into the classifier.
+See our [poster](docs/poster.pdf), [abstract](docs/abstract.pdf), and [presentation slides](docs/presentation.pdf) for a detailed overview.
 
-3. **Balanced Training Dataset:**
-   - Combine the positive and negative samples to create a balanced training dataset.
-   - Shuffle the dataset to ensure randomness in the order of samples.
+## 📁 Contents
 
-4. **Model Definition:**
-   - Define a binary classification model architecture using PyTorch, such as a simple feedforward neural network or a convolutional neural network (CNN).
-   - Design the input layer to accept the numerical representations of paper titles and abstracts.
+- `docs/`: Research artifacts (poster, presentation, abstract, proposal)
+- `code/`: Scripts used for data collection, embedding generation, clustering, and classification
+- `data/`: (Optional) Sample or anonymized data used in our study
+- `results/`: Evaluation metrics, visualizations, and analysis output
+- `notebooks/`: Jupyter notebooks for exploratory data analysis (EDA) and insight extraction
 
-5. **Loss Function and Optimizer:**
-   - Choose an appropriate loss function for binary classification tasks, such as binary cross-entropy loss.
-   - Select an optimizer, such as stochastic gradient descent (SGD) or Adam, to update the model parameters during training.
+## 🧠 Key Findings
 
-6. **Training Loop:**
-   - Iterate through the training dataset in mini-batches.
-   - Forward pass: Input the paper representations into the model and compute the predicted probabilities.
-   - Compute the loss between the predicted probabilities and the ground truth labels.
-   - Backward pass: Compute the gradients and update the model parameters using the chosen optimizer.
-   - Repeat the process for multiple epochs until convergence.
+- KMeans clustering with SPECTER2 embeddings achieved an ROC-AUC of ~0.88
+- Cosine similarity outperformed Euclidean distance for nearest neighbor classification
+- Trends indicate increasing focus on distributed training and hardware acceleration post-2020
 
-7. **Evaluation:**
-   - After training, evaluate the performance of the classifier on a separate validation or test dataset.
-   - Calculate metrics such as accuracy, precision, recall, and F1-score to assess the model's performance.
-   - Analyze any misclassifications and adjust the model or data preprocessing steps as needed.
+## 📈 Future Work
 
-8. **Fine-tuning and Hyperparameter Tuning:**
-   - Experiment with different model architectures, hyperparameters, and preprocessing techniques to improve performance.
-   - Utilize techniques such as cross-validation to tune hyperparameters effectively and avoid overfitting.
+- Automate the entire ingestion-classification pipeline
+- Extend classification framework to other interdisciplinary domains
+- Predict research trends using time-series modeling
 
-9. **Deployment:**
-   - Once satisfied with the classifier's performance, deploy it to classify new papers into MLSys and non-MLSys categories.
-   - Monitor the classifier's performance over time and update it as needed to maintain accuracy.
+## 👥 Authors
+
+- Aymaan Shaikh ([@aishaikh@umass.edu](mailto:aishaikh@umass.edu))
+- Takuto Ban ([@tban@umass.edu](mailto:tban@umass.edu))
+
+Advised by:
+- Prof. Hui Guan
+- Lijun Zhang
+
+## 📜 License
+
+This project is licensed under the MIT License.
