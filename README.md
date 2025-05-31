@@ -15,7 +15,7 @@ See our [poster](docs/poster.pdf), [abstract](docs/abstract.pdf), and [presentat
 
 - `docs/`: Research artifacts (poster, presentation, abstract, proposal)
 - `code/`: Scripts used for data collection, embedding generation, clustering, and classification
-- `data/`: (Optional) Sample or anonymized data used in our study
+- `data/`: (Optional) Sample or anonymized data used in our study, including embeddings (e.g., Sent2Vec, SPECTER2)
 - `results/`: Evaluation metrics, visualizations, and analysis output
 - `notebooks/`: Jupyter notebooks for exploratory data analysis (EDA) and insight extraction
 
