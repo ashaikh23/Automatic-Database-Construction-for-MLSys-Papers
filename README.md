@@ -1,44 +1,149 @@
 # Automatic Database Construction for MLSys Papers
 
-This repository contains our research from MLSys 2025 on building a machine learning-powered pipeline to automatically construct and analyze a curated database of academic papers in the Machine Learning Systems (MLSys) domain.
+This repository contains our accepted research from **MLSys 2025**, presented at the Santa Clara Convention Center. Our project introduces a machine learning-powered pipeline for automatically curating and analyzing a domain-specific database of academic papers in Machine Learning Systems (MLSys).
 
 ## 📄 Project Summary
 
-Our work focuses on:
-- Automatically ingesting and classifying academic papers relevant to MLSys.
-- Using machine learning techniques (clustering, KNN) and embeddings (SPECTER2, Sent2Vec) for document classification.
-- Performing citation and trend analysis to identify emerging topics and influential authors/institutions.
+Our work addresses the need for scalable, automated analysis of the rapidly growing MLSys literature. We:
 
-See our [poster](docs/poster.pdf), [abstract](docs/abstract.pdf), and [presentation slides](docs/presentation.pdf) for a detailed overview.
+- Automatically ingest and classify academic papers relevant to MLSys
+- Use document embeddings (SPECTER2, Sent2Vec) and ML techniques (K-Means clustering, KNN classification)
+- Perform citation graph analysis to uncover emerging topics, influential authors, and research trends
 
-## 📁 Contents
+For a detailed overview, see our [poster](docs/poster_mlsys2025.pdf), [abstract](docs/abstract_mlsys2025.pdf), and [presentation slides](docs/presentation_slides.pdf).
 
-- `docs/`: Research artifacts (poster, presentation, abstract, proposal)
-- `code/`: Scripts used for data collection, embedding generation, clustering, and classification
-- `data/`: (Optional) Sample or anonymized data used in our study, including embeddings (e.g., Sent2Vec, SPECTER2)
-- `results/`: Evaluation metrics, visualizations, and analysis output
-- `notebooks/`: Jupyter notebooks for exploratory data analysis (EDA) and insight extraction
+---
 
-## 🧠 Key Findings
+## 📁 Repository Structure
 
-- KMeans clustering with SPECTER2 embeddings achieved an ROC-AUC of ~0.88
-- Cosine similarity outperformed Euclidean distance for nearest neighbor classification
-- Trends indicate increasing focus on distributed training and hardware acceleration post-2020
+```
+MLSys-2025-Database-Research/
+│
+├── README.md
+├── LICENSE
+│
+├── docs/
+│   ├── abstract_mlsys2025.pdf
+│   ├── presentation_slides.pdf
+│   ├── poster_mlsys2025.pdf
+│   ├── project_log.pdf
+│
+├── data/
+│   ├── MLPapersFinal.csv
+│   └── embeddings/                   # Sent2Vec and SPECTER2 vectors
+│
+├── code/
+│   ├── data_ingestion.py
+│   ├── embedding_generation.py
+│   ├── clustering.py
+│   ├── classification.py
+│   └── utils.py
+│
+├── results/
+│   ├── figures/
+│   └── performance_metrics.txt
+│
+└── notebooks/
+    └── analysis.ipynb
+```
+
+---
+
+## 🧠 Key Results
+
+- **KMeans clustering (unsupervised)** with SPECTER2 embeddings achieved a ROC-AUC of **~0.88**
+- **KNN classification (supervised)** performed with high precision on balanced datasets
+- **Cosine similarity** outperformed Euclidean distance in classification tasks
+- **Emerging topics** include distributed training, hardware acceleration, and model optimization
+
+---
+
+## 🔍 Insights & Trends
+
+We explored:
+- The **evolution of research themes** in MLSys (2018–2024)
+- The **most cited papers** and **top contributing institutions**
+- **Emerging trends** using time-series analysis on cluster centroids
+
+---
+
+## 🧾 Development Log
+
+For detailed progress and technical decisions, see [`docs/project_log.pdf`](docs/project_log.pdf). It includes weekly meeting notes, design milestones, and implementation details.
+
+---
 
 ## 📈 Future Work
 
-- Automate the entire ingestion-classification pipeline
-- Extend classification framework to other interdisciplinary domains
-- Predict research trends using time-series modeling
+- Automate the full ingestion and classification pipeline
+- Scale the dataset from 500 to 5000+ papers
+- Explore **graph-based learning** on citation networks
+- Extend our methodology to interdisciplinary domains
+- Improve model interpretability and classifier robustness
+
+---
+
+## 💻 Installation
+
+Clone the repo and install required dependencies (Python 3.8+ recommended):
+
+```bash
+git clone https://github.com/ashaikh23/Automatic-Database-Construction-for-MLSys-Papers.git
+cd Automatic-Database-Construction-for-MLSys-Papers
+pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Usage
+
+Run the pipeline step-by-step or execute modules individually:
+
+```bash
+python code/data_ingestion.py
+python code/embedding_generation.py
+python code/clustering.py
+python code/classification.py
+```
+
+Jupyter notebooks for analysis are available in the `notebooks/` directory.
+
+---
+
+## 🧪 Evaluation
+
+- All classification results are stored in `results/performance_metrics.txt`
+- Visualizations are saved under `results/figures/`
+
+We report results using standard metrics (ROC-AUC, precision, recall) and include ablation studies comparing embedding methods and distance metrics.
+
+---
+
+## 📚 Citing This Work
+
+If you use this project or build on our pipeline, please consider citing our MLSys 2025 abstract:
+
+```
+@misc{shaikh2025mlsysdb,
+  title={Automatic Database Construction for MLSys Papers},
+  author={Aymaan Shaikh and Takuto Ban},
+  year={2025},
+  howpublished={Accepted to MLSys 2025, Santa Clara Convention Center}
+}
+```
+
+---
 
 ## 👥 Authors
 
-- Aymaan Shaikh ([@aishaikh@umass.edu](mailto:aishaikh@umass.edu))
-- Takuto Ban ([@tban@umass.edu](mailto:tban@umass.edu))
+- **Aymaan Shaikh** – [aishaikh@umass.edu](mailto:aishaikh@umass.edu)
+- **Takuto Ban** – [tban@umass.edu](mailto:tban@umass.edu)
 
-Advised by:
-- Prof. Hui Guan
+**Advisors:**
+- Prof. Hui Guan  
 - Lijun Zhang
+
+---
 
 ## 📜 License
 
