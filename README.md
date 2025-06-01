@@ -1,6 +1,6 @@
 # Automatic Database Construction for MLSys Papers
 
-This repository contains our accepted research from **MLSys 2025**  [**MLSys 2025**](https://mlsys.org/), presented at the Santa Clara Convention Center. Our project introduces a machine learning-powered pipeline for automatically curating and analyzing a domain-specific database of academic papers in Machine Learning Systems (MLSys).
+This repository contains our accepted research from [**MLSys 2025**](https://mlsys.org/), presented at the Santa Clara, CA. Our project introduces a machine learning-powered pipeline for automatically curating and analyzing a domain-specific database of academic papers in Machine Learning Systems (MLSys).
 
 ## 📄 Project Summary
 
