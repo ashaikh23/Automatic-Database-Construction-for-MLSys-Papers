@@ -140,8 +140,8 @@ If you use this project or build on our pipeline, please consider citing our MLS
 - **Takuto Ban** – [tban@umass.edu](mailto:tban@umass.edu)
 
 **Advisors:**
-- Prof. Hui Guan  
-- Lijun Zhang
+- Prof. [Hui Guan](https://guanh01.github.io/)
+- [Lijun Zhang, PhD](https://zhanglijun95.github.io/)
 
 ---
 
