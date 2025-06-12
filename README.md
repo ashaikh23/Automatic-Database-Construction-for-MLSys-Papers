@@ -134,7 +134,7 @@ If you use this project or build on our pipeline, please consider citing our MLS
 
 ---
 
-## 👥 Authors (College of Information and Computer Sciences at the University of Massachusetts Amherst)
+## 👥 Authors (University of Massachusetts Amherst)
 
 - **Aymaan Shaikh** – [aishaikh@umass.edu](mailto:aishaikh@umass.edu)
 - **Takuto Ban** – [tban@umass.edu](mailto:tban@umass.edu)
