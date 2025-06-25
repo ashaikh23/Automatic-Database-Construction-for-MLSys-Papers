@@ -6,7 +6,7 @@ This repository contains our accepted research from [**MLSys 2025**](https://mls
 
 Our work addresses the need for scalable, automated analysis of the rapidly growing MLSys literature. We:
 
-- Automatically ingest and classify academic papers relevant to MLSys
+- Automatically ingest and classify academic papers relevant to MLSys 
 - Use document embeddings (SPECTER2, Sent2Vec) and ML techniques (K-Means clustering, KNN classification)
 - Perform citation graph analysis to uncover emerging topics, influential authors, and research trends
 
@@ -137,7 +137,7 @@ If you use this project or build on our pipeline, please consider citing our MLS
 ## 👥 Authors (University of Massachusetts Amherst)
 
 - [Aymaan Shaikh](https://ashaikh23.github.io/)
-- **Takuto Ban** – [tban@umass.edu](mailto:tban@umass.edu)
+- [Takuto Ban](www.google.com)
 
 **Advisors:**
 - Prof. [Hui Guan](https://guanh01.github.io/)
