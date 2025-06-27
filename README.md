@@ -137,7 +137,7 @@ If you use this project or build on our pipeline, please consider citing our MLS
 ## 👥 Authors (University of Massachusetts Amherst)
 
 - [Aymaan Shaikh](https://ashaikh23.github.io/)
-- [Takuto Ban](www.google.com)
+- Takuto Ban
 
 **Advisors:**
 - Prof. [Hui Guan](https://guanh01.github.io/)
