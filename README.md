@@ -10,7 +10,7 @@ Our work addresses the need for scalable, automated analysis of the rapidly grow
 - Use document embeddings (SPECTER2, Sent2Vec) and ML techniques (K-Means clustering, KNN classification)
 - Perform citation graph analysis to uncover emerging topics, influential authors, and research trends
 
-For a detailed overview, see our [poster](docs/MLSys_Poster_Automatic_Database_Construction_for_MLsys.pdf), [abstract](docs/MLSys%202025%20Accepted%20Abstract%20Automatic%20Database%20Construction%20for%20MLSys%20Papers.pdf), and [presentation slides](docs/presentation_slides.pdf).
+For a detailed overview, see our [poster](docs/MLSys_Poster_Automatic_Database_Construction_for_MLsys.pdf), [abstract](docs/MLSys%202025%20Accepted%20Abstract%20Automatic%20Database%20Construction%20for%20MLSys%20Papers.pdf), and [presentation slides](docs/Building%20a%20Domain-Specific%20Database%20for%20MLSys%20Papers%20Presentation%20-%20Aymaan%20and%20Takuto.pdf).
 
 ---
 
