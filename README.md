@@ -141,7 +141,7 @@ If you use this project or build on our pipeline, please consider citing our MLS
 
 **Advisors:**
 - Prof. [Hui Guan](https://guanh01.github.io/)
-- [Lijun Zhang, PhD](https://zhanglijun95.github.io/)
+- [Lijun Zhang](https://zhanglijun95.github.io/)
 
 ---
 
